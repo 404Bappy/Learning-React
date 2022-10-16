@@ -4,14 +4,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <person></person>
-      <person></person>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
     </div>
   );
 }
 
-function person() {
-  return <h1>Arafat Bappy</h1>
+function Person() {
+
+  return (
+    <div className='person'>
+      <h1>Arfat Bappy</h1>
+      <h4>Profession: Footballer</h4>
+    </div>
+  );
 }
 
 export default App;
