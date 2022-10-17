@@ -4,8 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
+      <a href="https://www.google.com/">Google</a>
+      <Person name = "Sabbir" play = "ludu"></Person>
+      <Person naem = "bappy" play = "football"></Person>
       <Person></Person>
       <Person></Person>
       <Person></Person>
@@ -13,7 +14,8 @@ function App() {
   );
 }
 
-function Person() {
+function Person(props) {
+  console.log(props);
   const person = {
     backgroundColor: 'skyblue',
     border: '3px solid lightsalmon',
