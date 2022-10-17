@@ -14,9 +14,15 @@ function App() {
 }
 
 function Person() {
+  const person = {
+    backgroundColor: 'skyblue',
+    border: '3px solid lightsalmon',
+    margin: '20px',
+    borderRadius: '10px'
+  }
 
   return (
-    <div className='person'>
+    <div style={person}>
       <h1>Arfat Bappy</h1>
       <h4>Profession: Footballer</h4>
     </div>
