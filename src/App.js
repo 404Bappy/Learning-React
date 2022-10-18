@@ -5,11 +5,10 @@ function App() {
   return (
     <div className="App">
       <a href="https://www.google.com/">Google</a>
-      <Person name = "Sabbir" play = "ludu"></Person>
-      <Person naem = "bappy" play = "football"></Person>
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
+      <Person name="Sabbir" play="ludu"></Person>
+      <Person name="bappy" play="football"></Person>
+      <Person name="Rabbi" play="Carrom"></Person>
+      <Person name="shajib" play="COC"></Person>
     </div>
   );
 }
@@ -25,8 +24,8 @@ function Person(props) {
 
   return (
     <div style={person}>
-      <h1>Arfat Bappy</h1>
-      <h4>Profession: Footballer</h4>
+      <h1>Name: {props.name}</h1>
+      <h4>Profession: {props.play}</h4>
     </div>
   );
 }
