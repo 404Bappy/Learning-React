@@ -30,4 +30,11 @@ function Person(props) {
   );
 }
 
+function Friend() {
+  return (
+    <h3>Phone:</h3>
+
+  )
+}
+
 export default App;
