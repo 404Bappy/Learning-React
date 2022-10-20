@@ -4,14 +4,17 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <a href="https://www.google.com/">Google</a>
-      <Person name="Sabbir" play="ludu"></Person>
-      <Person name="bappy" play="football"></Person>
-      <Person name="Rabbi" play="Carrom"></Person>
-      <Person name="shajib" play="COC"></Person>
+      <Friend phone = '01849675876' Address= 'Dhaka'></Friend>
+      <Friend phone = '01749675876' Address= 'RongPur'></Friend>
+      <Friend phone = '01949675876' Address= 'Feni'></Friend>
     </div>
   );
 }
+/*<a href="https://www.google.com/">Google</a>
+<Person name="Sabbir" play="ludu"></Person>
+<Person name="bappy" play="football"></Person>
+<Person name="Rabbi" play="Carrom"></Person>
+<Person name="shajib" play="COC"></Person>*/
 
 function Person(props) {
   console.log(props);
@@ -30,9 +33,15 @@ function Person(props) {
   );
 }
 
-function Friend() {
+function Friend(props) {
+  console.log(props);
   return (
-    <h3>Phone:</h3>
+    <div className='person'>
+       <h3>Phone:{props.phone}</h3>
+       <h5>Address:{props.Address}</h5>
+    </div>
+    
+   
 
   )
 }
