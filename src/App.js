@@ -49,4 +49,12 @@ function Friend(props) {
   )
 }
 
+function MyComponent(){
+  return(
+    <div>
+      <h1>yo yo mama  </h1>
+    </div>
+  )
+}
+
 export default App;
