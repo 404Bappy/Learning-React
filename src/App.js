@@ -49,6 +49,7 @@ function Friend(props) {
   )
 }
 
+
 function MyComponent(){
   return(
     <div>
