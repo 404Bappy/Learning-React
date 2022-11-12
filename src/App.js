@@ -8,6 +8,8 @@ const tournament =[
   {Name: 'rofiq', play:'ludu'},
   {Name: 'jabbar', play:'football'},
   {Name: 'shafiq', play:'Carrom'},
+  {Name: 'shafiq', play:'Carrom'},
+  {Name: 'shafiq', play:'Carrom'},
   
 ]
   return (
@@ -18,7 +20,7 @@ const tournament =[
         }
         
      </ul>
-     <Tournament Name ="Rofiq" play="Ludu"></Tournament>
+     {/* <Tournament Name ="Rofiq" play="Ludu"></Tournament> */}
      {
        tournament.map(tournament => <Tournament Name ={tournament.Name} play={tournament.play}></Tournament>)
      }
