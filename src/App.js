@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const Name = ['rofiq', 'jabbar', 'shafiq', 'salam', 'Kalam' ,'raken'] 
 
-const Sports =[
+const tournament =[
   {Name: 'rofiq', play:'ludu'},
   {Name: 'jabbar', play:'football'},
   {Name: 'shafiq', play:'Carrom'},
@@ -18,9 +18,9 @@ const Sports =[
         }
         
      </ul>
-     <Sports Name ="FOOTBALL" play="Rofiq"></Sports>
+     <Tournament Name ="Rofiq" play="Ludu"></Tournament>
      {
-       Sports.map(sports =><Sports Name ="FOOTBALL" play="Rofiq"></Sports>)
+       tournament.map(tournament => console.log(tournament))
      }
 
     </div>
@@ -53,7 +53,7 @@ function Tournament(props){
   return(
     <div className='person'>
       <h2>Name: {props.Name}</h2>
-      <h4>Play:{props.Sports}</h4>
+      <h4>Play:{props.play}</h4>
     </div>
   )
 }
