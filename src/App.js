@@ -18,11 +18,11 @@ const Sports =[
         }
         
      </ul>
-<Person name= {Name[0]} play="ludu"></Person>
-<Person name={Name[1]} play="football"></Person>
-<Person name={Name[2]} play="Carrom"></Person>
-<Person name={Name[3]} play="COC"></Person>
-<Person name={Name[4]} play="Kabadi"></Person>
+     <Sports Name ="FOOTBALL" play="Rofiq"></Sports>
+     {
+       Sports.map(sports =><Sports Name ="FOOTBALL" play="Rofiq"></Sports>)
+     }
+
     </div>
   );
 }
@@ -49,7 +49,14 @@ function Person(props) {
   );
 }
 
-
+function Tournament(props){
+  return(
+    <div className='person'>
+      <h2>Name: {props.Name}</h2>
+      <h4>Play:{props.Sports}</h4>
+    </div>
+  )
+}
 
 
 
@@ -77,3 +84,12 @@ function MyComponent(){
 }
 
 export default App;
+
+
+
+
+// <Person name= {Name[0]} play="ludu"></Person>
+//<Person name={Name[1]} play="football"></Person>
+//<Person name={Name[2]} play="Carrom"></Person>
+//<Person name={Name[3]} play="COC"></Person>
+//<Person name={Name[4]} play="Kabadi"></Person>
