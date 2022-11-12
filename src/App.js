@@ -8,8 +8,8 @@ function App() {
       <a href="https://www.google.com/">Google</a>
 <Person name= {Name[0]} play="ludu"></Person>
 <Person name={Name[1]} play="football"></Person>
-<Person name="Rabbi" play="Carrom"></Person>
-<Person name="shajib" play="COC"></Person>
+<Person name={Name[2]} play="Carrom"></Person>
+<Person name={Name[3]} play="COC"></Person>
     </div>
   );
 }
@@ -52,7 +52,7 @@ function Friend(props) {
 
 function MyComponent(){
   return(
-    <div>
+    <div> 
       <h1>yo yo mama  </h1>
     </div>
   )
