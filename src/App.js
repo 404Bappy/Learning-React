@@ -3,6 +3,13 @@ import './App.css';
 
 function App() {
   const Name = ['rofiq', 'jabbar', 'shafiq', 'salam', 'Kalam' ,'raken'] 
+
+const Sports =[
+  {Name: 'rofiq', play:'ludu'},
+  {Name: 'jabbar', play:'football'},
+  {Name: 'shafiq', play:'Carrom'},
+  
+]
   return (
     <div className="App">
      <ul>
@@ -41,6 +48,11 @@ function Person(props) {
     </div>
   );
 }
+
+
+
+
+
 
 function Friend(props) {
   console.log(props);
