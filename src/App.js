@@ -20,7 +20,7 @@ const tournament =[
      </ul>
      <Tournament Name ="Rofiq" play="Ludu"></Tournament>
      {
-       tournament.map(tournament => console.log(tournament))
+       tournament.map(tournament => <Tournament Name ={tournament.Name} play={tournament.play}></Tournament>)
      }
 
     </div>
