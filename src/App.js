@@ -7,7 +7,7 @@ function App() {
     <div className="App">
      <ul>
         {
-          Name.map(Name => <li></li>)
+          Name.map(Name => <li>{Name}</li>)
         }
         
      </ul>
