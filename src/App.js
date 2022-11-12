@@ -2,14 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const Name = ['rofiq', 'jabbar', 'shafiq', 'salam']
+  const Name = ['rofiq', 'jabbar', 'shafiq', 'salam', 'Kalam' ,'raken'] 
   return (
     <div className="App">
-      <a href="https://www.google.com/">Google</a>
+     <ul>
+        {
+          Name.map(Name => <li></li>)
+        }
+        
+     </ul>
 <Person name= {Name[0]} play="ludu"></Person>
 <Person name={Name[1]} play="football"></Person>
 <Person name={Name[2]} play="Carrom"></Person>
 <Person name={Name[3]} play="COC"></Person>
+<Person name={Name[4]} play="Kabadi"></Person>
     </div>
   );
 }
